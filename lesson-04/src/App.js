@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          KDWOEdit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Technologies/>
+    </div>
+  );
+}
+
+const Technologies = () => {
+  return (
+    <div>
+      <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+      </ul>
+    </div>
+  )
+}
+
+const Header = () => {
+  return (
+    <div>
+      <a href='#'>Home</a>
+      <a href='#'>News Feed</a>
+      <a href='#'>Messages</a>
     </div>
   );
 }
