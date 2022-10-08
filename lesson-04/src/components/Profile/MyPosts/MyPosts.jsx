@@ -9,6 +9,7 @@ const MyPosts = () => {
       <div>
         <textarea></textarea>
         <button>Add Post</button>
+        <button>Remove Post</button>
 
       </div>
       <div className={s.posts}>
